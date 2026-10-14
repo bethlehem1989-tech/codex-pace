@@ -12,6 +12,6 @@ cp LICENSE "$STAGE/LICENSE"
 cp THIRD_PARTY_NOTICES.md "$STAGE/THIRD_PARTY_NOTICES.md"
 chmod +x "$STAGE/Install.command"
 ARCHIVE="Codex-Pace-${VERSION}-macOS-universal.zip"
-ditto -c -k --keepParent "$STAGE" "dist/$ARCHIVE"
+ditto --norsrc --noextattr --noacl -c -k --keepParent "$STAGE" "dist/$ARCHIVE"
 (cd dist && shasum -a 256 "$ARCHIVE" > "$ARCHIVE.sha256")
 printf 'Packaged: dist/%s\n' "$ARCHIVE"
