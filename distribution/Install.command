@@ -22,7 +22,7 @@ if [[ -d "$APP" ]]; then
 fi
 ditto 'Codex Pace.app' "$APP"
 open "$APP"
-printf '\n已安装到 ~/Applications。鼠标移到右侧小条即可查看余额和今日目标。\n'
-printf '蓝绿=累计已用，橙线=今日累计目标；超过橙线表示今天用得偏快。\n'
+printf '\n已安装到 ~/Applications。鼠标移到右侧小条即可查看“已用”和“应到”。\n'
+printf '微信绿=累计已用，橙线=当前本应达到；超过橙线表示用得偏快。\n'
 printf '若 macOS 阻止打开，请前往“系统设置 → 隐私与安全性”允许打开 Codex Pace。\n'
 read -r -p '按回车关闭本窗口。' _reply

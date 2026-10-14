@@ -90,7 +90,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate {
         panel.hasShadow = true
         panel.animationBehavior = .none
         panel.level = TabPositioning.windowLevel
-        panel.minSize = NSSize(width: 324, height: 312)
+        panel.minSize = NSSize(width: 180, height: 64)
         panel.maxSize = NSSize(width: 560, height: 320)
         panel.collectionBehavior = [.canJoinAllSpaces, .fullScreenAuxiliary, .stationary]
         panel.delegate = self
@@ -619,7 +619,7 @@ enum TabPositioning {
     static let windowLevel = NSWindow.Level.statusBar
     static let edgePadding: CGFloat = 8
     static let panelTopGap: CGFloat = 4
-    static let panelDesignSize = NSSize(width: 324, height: 312)
+    static let panelDesignSize = NSSize(width: 180, height: 64)
     static let defaultPanelDisplayScale: CGFloat = 1
     static var defaultPanelSize: NSSize {
         NSSize(

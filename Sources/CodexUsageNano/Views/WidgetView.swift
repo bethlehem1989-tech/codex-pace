@@ -5,7 +5,7 @@ struct WidgetView: View {
 
     var body: some View {
         QuotaSummaryView(store: store)
-            .frame(minWidth: 324, minHeight: 312)
+            .frame(minWidth: 180, minHeight: 64)
             .background {
                 RoundedRectangle(cornerRadius: 18, style: .continuous)
                     .fill(.regularMaterial)

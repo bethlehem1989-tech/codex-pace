@@ -19,9 +19,9 @@ final class TabPositioningTests: XCTestCase {
     }
 
     func testEdgeTabPresentationUsesSlimCollapsedBar() {
-        XCTAssertEqual(EdgeTabPresentation.size(for: .collapsed), CGSize(width: 128, height: 24))
-        XCTAssertEqual(EdgeTabPresentation.size(for: .dragging), CGSize(width: 128, height: 24))
-        XCTAssertEqual(EdgeTabPresentation.size(for: .expanded), CGSize(width: 324, height: 312))
+        XCTAssertEqual(EdgeTabPresentation.size(for: .collapsed), CGSize(width: 64, height: 16))
+        XCTAssertEqual(EdgeTabPresentation.size(for: .dragging), CGSize(width: 64, height: 16))
+        XCTAssertEqual(EdgeTabPresentation.size(for: .expanded), CGSize(width: 180, height: 64))
     }
 
     func testEdgeTabUsageBarHasNoFillAtZeroPercent() {
@@ -44,9 +44,9 @@ final class TabPositioningTests: XCTestCase {
     }
 
     func testDefaultPanelSizeFitsQuotaSummary() {
-        XCTAssertEqual(TabPositioning.panelDesignSize, NSSize(width: 324, height: 312))
+        XCTAssertEqual(TabPositioning.panelDesignSize, NSSize(width: 180, height: 64))
         XCTAssertEqual(TabPositioning.defaultPanelDisplayScale, 1)
-        XCTAssertEqual(TabPositioning.defaultPanelSize, NSSize(width: 324, height: 312))
+        XCTAssertEqual(TabPositioning.defaultPanelSize, NSSize(width: 180, height: 64))
     }
 
     func testPanelSizeResetUsesDefaultTabRelationWithoutSavedOffset() {

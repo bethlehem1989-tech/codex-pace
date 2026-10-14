@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.0.1 — 2026-10-14
+
+- Simplify to a 64×16 tab with no visible text.
+- Use WeChat green (#07C160) for cumulative usage and orange (#FF9500) for current expected pace.
+- Reduce hover details to two numbers: used and expected now.
+- Constrain bar fill height so it stays within the track.
+
 ## 1.0.0 — 2026-10-14
 
 - Rename the distribution to Codex Pace; retain MIT upstream attribution.
