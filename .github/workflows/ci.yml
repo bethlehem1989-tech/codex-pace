@@ -1,0 +1,19 @@
+name: Build and test
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Quota and pacing checks (synthetic data)
+        run: ./script/check_pace.sh
+      - name: Swift tests
+        run: swift test
+      - name: Build app
+        run: ./script/build_app.sh
+      - name: Hover integration check
+        run: '"dist/Codex Pace.app/Contents/MacOS/CodexUsageNano" --self-test-hover'

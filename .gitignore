@@ -1,0 +1,13 @@
+.build/
+.swiftpm/
+dist/
+.DS_Store
+.autoreview-reports/
+*.zip
+*.sha256
+*.ips
+*.log
+.env
+.env.*
+auth.json
+*.jsonl

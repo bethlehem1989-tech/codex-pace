@@ -1,0 +1,20 @@
+Codex Pace · Codex 额度节奏
+
+要求：macOS 14+（Apple Silicon 或 Intel）、已登录 Codex/ChatGPT 的 Codex 会话。
+1. 解压后双击 Install.command。它会安装 CodexBar（需要 Homebrew），再安装并启动 Codex Pace。
+   也可以先安装 CodexBar 到 /Applications，再把 Codex Pace.app 拖到“应用程序”打开。
+2. 右侧蓝绿条=本周累计已用；橙线和“今xx%”=今晚的累计目标。
+   蓝绿条超过橙线：已超过今日目标；还没到橙线：今日目标尚未达到。
+3. 鼠标移上去展开：查看剩余、实际用量、当前参考进度、今晚目标和重置时间。
+4. 移开收起；拖动调整位置；点击固定详情；右键刷新或退出。
+
+目标按服务端额度周期线性分配，今天按中国时间算到24:00；若今天更早重置，目标算到重置时。
+百分比为额度用量，不能换算成固定Token数。Credits单独显示。
+额度读取失败时保留上次读数并注明；周期过期或缺少数据时隐藏目标。
+
+这是社区开源软件，不是 OpenAI 官方产品。安装包使用临时本地签名，未做Apple公证。
+若系统阻止打开，请在“系统设置 → 隐私与安全性”中允许打开；不会关闭系统安全保护。
+
+开源地址：https://github.com/bethlehem1989-tech/codex-pace
+下载：https://github.com/bethlehem1989-tech/codex-pace/releases/latest
+基于 MIT 开源的 Codex Usage Nano 改造；许可和归属见 LICENSE / THIRD_PARTY_NOTICES.md。
